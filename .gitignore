@@ -1,5 +1,8 @@
 *.cf
 *.vcd
 
-report.md
-report.pdf
+report.*
+!/report.sh
+_minted*
+
+.*.sw[a-p]
