@@ -29,6 +29,7 @@ begin
                      low => low
                    );
 
+  -- Clock loop, T=1ns, f=1MHz
   process
   begin
     wait for 0.5 ns;
@@ -37,11 +38,20 @@ begin
 
   process
   begin
+    -- Initial reset
+    rst <= '1';
+    wait for 1 us;
+    rst <= '0';
+
+    -- Reset for 10us
     wait for 100 us;
     rst <= '1';
     wait for 10 us;
     rst <= '0';
+
     wait for 10 us;
+
+    -- Stop for 10us
     stop <= '1';
     wait for 10 us;
     stop <= '0';
