@@ -3,7 +3,7 @@ documentclass:
   - ctexart
 ---
 
-# Week 3 点亮数字人生
+# Week 11 计数器的设计
 
 ## 源代码
 - **counter.vhdl**: 计数器以及其他功能
@@ -15,6 +15,7 @@ documentclass:
 ## 软件仿真
 
 仿真结果位于 wave.vcd 文件中。生成的输入如下：
+
 - 200us 的 1M 时钟，其中：
   - 开始给予 1us 的 reset
   - 101us - 111us，reset
